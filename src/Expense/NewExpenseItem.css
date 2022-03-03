@@ -1,0 +1,107 @@
+.newExpenseItem-container {
+  margin-top: 5rem;
+}
+
+.newExpenseItem-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newExpenseItem-header h1 {
+  font-size: 1.3rem;
+  color: rgb(233, 233, 233);
+  padding: 0.5rem;
+}
+
+.newExpenseItem-header h2 {
+  border: 1px solid rgb(255, 31, 31);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: rgb(255, 31, 31);
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+.newExpenseItem-input {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgb(233, 233, 233);
+}
+
+.newExpenseItem-title,
+.newExpenseItem-amount,
+.newExpenseItem-date {
+  padding: 1rem 0rem 0rem;
+}
+
+.newExpenseItem-title input,
+.newExpenseItem-amount input,
+.newExpenseItem-date input {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+
+.newExpenseItem-title {
+  width: 100%;
+}
+.newExpenseItem-title input {
+  width: 98%;
+  margin: 0.5rem 0;
+}
+
+.newExpenseItem-amount,
+.newExpenseItem-date {
+  width: 45%;
+}
+
+.newExpenseItem-amount {
+  margin-right: 10%;
+}
+
+.newExpenseItem-amount input,
+.newExpenseItem-date input {
+  width: 95%;
+  margin: 0.5rem 0;
+}
+
+.newExpenseItem-btns {
+  padding: 2rem 0.5rem 1rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.newExpenseItem-btns button,
+.newExpenseItem-btn {
+  padding: 0.6rem 1rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"],
+.newExpenseItem-btn {
+  background-color: greenyellow;
+  font-weight: bold;
+}
+
+button[type="reset"] {
+  background: none;
+  border: 1px solid rgb(164, 164, 164);
+  color: rgb(164, 164, 164);
+}
+
+.newExpenseItem-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.newExpenseItem-btn {
+  margin-left: 0;
+}

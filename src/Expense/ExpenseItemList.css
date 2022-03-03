@@ -1,0 +1,20 @@
+.expenseList-container,
+.newExpenseItem-container {
+  width: 70%;
+  background-color: rgb(40, 42, 46);
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+.newExpenseItem-container {
+  position: sticky;
+  top: 1rem;
+}
+
+@media screen and (max-width: 760px) {
+  .expenseList-container,
+  .newExpenseItem-container {
+    width: 90%;
+  }
+}

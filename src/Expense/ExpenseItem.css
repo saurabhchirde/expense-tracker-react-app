@@ -1,0 +1,56 @@
+.item-container {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  padding: 0.3rem 0.5rem;
+  background-color: rgb(81, 81, 85);
+  color: rgb(233, 233, 233);
+}
+
+.item-container h1 {
+  font-size: 1.3rem;
+}
+
+.item-container h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.item-container h3 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.item-date {
+  background-color: rgb(48, 48, 48);
+  border: 1px solid gray;
+  text-align: center;
+  padding: 0 1rem;
+  min-width: 5rem;
+  border-radius: 10px;
+}
+
+.item-date h1,
+.item-date h2,
+.item-date h3 {
+  margin: 0.7rem;
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0.6rem;
+  width: 100%;
+}
+
+.item-delete {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.item-delete:hover {
+  background-color: rgba(50, 50, 50, 0.523);
+}

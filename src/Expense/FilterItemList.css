@@ -1,0 +1,21 @@
+.filterItemList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(233, 233, 233);
+}
+
+.filterItemList h2 {
+  font-size: 1rem;
+}
+
+.filterItemList-select {
+  height: 2rem;
+  width: 6rem;
+  padding: 0 0.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(81, 81, 85);
+  color: rgb(233, 233, 233);
+}
