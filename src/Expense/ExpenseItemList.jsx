@@ -1,6 +1,6 @@
 import ExpenseItem from "./ExpenseItem";
 import "./ExpenseItemList.css";
-import FilterItemList from "./FilterItemList";
+// import FilterItemList from "./FilterItemList";
 
 const ExpenseItemList = (props) => {
   const onDeleteClickHandler = (id) => {
@@ -8,14 +8,8 @@ const ExpenseItemList = (props) => {
     // console.log(id);
   };
 
-  const onFilterOptionHandler = (filteredYear) => {
-    props.onFilteredYear(filteredYear);
-    // console.log("From Expense item list", filteredYear);
-  };
-
   return (
     <div className="expenseList-container">
-      <FilterItemList onFilterOption={onFilterOptionHandler} />
       {props.expenseList.map((item) => {
         return (
           <ExpenseItem

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ExpenseItemList from "./Expense/ExpenseItemList";
 import NewExpenseItem from "./Expense/NewExpenseItem";
 import uuid from "react-uuid";
@@ -37,7 +37,9 @@ const demoExpenses = [
 ];
 
 const App = () => {
-  const [expenses, setExpenses] = useState(demoExpenses);
+  const [expenses, setExpenses] = useState(
+    JSON.parse(localStorage.getItem("list")) ?? demoExpenses
+  );
 
   const onNewItemHandler = (newExpense) => {
     setExpenses((preExpenses) => {
@@ -54,15 +56,9 @@ const App = () => {
     });
   };
 
-  const onFilteredYearHandler = (filteredYear) => {
-    // console.log("From App", filteredYear);
-    // setExpenses((preExpenses) => {
-    //   return preExpenses.filter((item) => {
-    //     // console.log(item.date);
-    //     return item.date.includes(filteredYear);
-    //   });
-    // });
-  };
+  useEffect(() => {
+    localStorage.setItem("list", JSON.stringify(expenses));
+  });
 
   return (
     <div>
@@ -71,7 +67,6 @@ const App = () => {
         id={expenses.id}
         expenseList={expenses}
         onDeleteClick={onDeleteClickHandler}
-        onFilteredYear={onFilteredYearHandler}
       />
     </div>
   );
